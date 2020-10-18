@@ -1,15 +1,15 @@
 env:
-  version: 1.0 # 你的版本名稱
+  version: 0.0.1 # 你的版本名稱
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 name: Publish Process
 
-# ↓ 移走 # 即可啟用自動生成 下載檔案 及 javadoc
-#on:
-#  push:
-#    branches: [ master ]
-#  pull_request:
-#    branches: [ master ]
+# ↓ 自動生成 下載檔案 及 javadoc
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:

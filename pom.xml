@@ -7,7 +7,7 @@
     <groupId>org.eldependenci</groupId>
     <artifactId>Template-For-ELDependenci-Addon</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>0.0.1</version>
     <modules>
         <module>APIModule</module>
         <module>PluginModule</module>
