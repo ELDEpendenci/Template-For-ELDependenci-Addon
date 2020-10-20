@@ -19,8 +19,8 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.ericlam.mc</groupId>
-            <artifactId>eld-api</artifactId>
+            <groupId>org.eldependenci</groupId>
+            <artifactId>eldependenci</artifactId>
         </dependency>
     </dependencies>
 

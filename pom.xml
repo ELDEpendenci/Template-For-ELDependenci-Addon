@@ -40,9 +40,9 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.ericlam.mc</groupId>
-                <artifactId>eld-api</artifactId>
-                <version>0.0.6</version>
+                <groupId>org.eldependenci</groupId>
+                <artifactId>eldependenci</artifactId>
+                <version>0.0.7</version>
                 <scope>provided</scope>
             </dependency>
         </dependencies>
