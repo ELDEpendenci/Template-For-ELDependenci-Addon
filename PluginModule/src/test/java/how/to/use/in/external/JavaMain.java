@@ -4,6 +4,7 @@ import com.ericlam.mc.eld.ELDBukkitPlugin;
 import com.ericlam.mc.eld.ManagerProvider;
 import com.ericlam.mc.eld.ServiceCollection;
 import com.ericlam.mc.eld.annotations.ELDPlugin;
+import tutorial.showcase.MyExampleInstallation;
 
 /*
     範例插件 - 使用你的 API
@@ -21,6 +22,10 @@ public class JavaMain extends ELDBukkitPlugin {
 
     @Override
     protected void bindServices(ServiceCollection serviceCollection) {
+        // 獲取 該擴充插件 的註冊器
+        MyExampleInstallation installation = serviceCollection.getInstallation(MyExampleInstallation.class);
+        installation.putSomeValue("hello", "world");
+        installation.putSomeValue("good", "work");
     }
 
     @Override
