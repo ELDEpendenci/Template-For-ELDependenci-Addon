@@ -1,1 +1,1 @@
-memberSearchIndex = [{"p":"tutorial.showcase","c":"ExampleService","l":"doSomethingCool()"}]
+memberSearchIndex = [{"p":"tutorial.showcase","c":"ExampleService","l":"doSomethingCool()"},{"p":"tutorial.showcase","c":"MyExampleInstallation","l":"putSomeValue(String, String)","url":"putSomeValue(java.lang.String,java.lang.String)"}]
