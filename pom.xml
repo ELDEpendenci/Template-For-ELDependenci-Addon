@@ -19,7 +19,7 @@
             <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
         <repository>
-            <id>eld</id>
+            <id>github</id>
             <url>https://maven.pkg.github.com/ELDependenci/eldependenci</url>
         </repository>
     </repositories>
@@ -157,7 +157,7 @@
         <repository>
             <id>github</id>
             <name>Github ELDependenci Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/ELDependenci/eldependenci/${artifactId}</url>
+            <url>https://maven.pkg.github.com/ELDependenci/eldependenci/template-for-eldependenci-addon</url>
             <uniqueVersion>false</uniqueVersion>
         </repository>
     </distributionManagement>
