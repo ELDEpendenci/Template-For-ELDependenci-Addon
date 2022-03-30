@@ -19,14 +19,14 @@
             <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
         <repository>
-            <id>chu77</id>
-            <url>https://nexus.chu77.xyz/repository/plugins/</url>
+            <id>eld</id>
+            <url>https://maven.pkg.github.com/ELDependenci/eldependenci</url>
         </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
+            <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
         </dependency>
     </dependencies>
@@ -34,21 +34,21 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.destroystokyo.paper</groupId>
+                <groupId>io.papermc.paper</groupId>
                 <artifactId>paper-api</artifactId>
-                <version>1.16.5-R0.1-SNAPSHOT</version>
+                <version>1.17.1-R0.1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.eldependenci</groupId>
                 <artifactId>eldependenci-framework</artifactId>
-                <version>0.1.1</version>
+                <version>0.1.5</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.eldependenci</groupId>
                 <artifactId>eldependenci-addon</artifactId>
-                <version>0.1.1</version>
+                <version>0.1.5</version>
                 <scope>provided</scope>
             </dependency>
         </dependencies>
@@ -57,6 +57,11 @@
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.0.0-M2</version>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
@@ -115,8 +120,8 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
                     <configuration>
-                        <source>11</source>
-                        <target>11</target>
+                        <source>16</source>
+                        <target>16</target>
                         <encoding>UTF-8</encoding>
                     </configuration>
                 </plugin>
@@ -147,5 +152,15 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Github ELDependenci Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/ELDependenci/eldependenci/${artifactId}</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+    </distributionManagement>
+
 
 </project>
