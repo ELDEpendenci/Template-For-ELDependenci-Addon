@@ -13,8 +13,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      packages: read
     steps:
       - name: Checkout Source Code
         id: checkout-source
