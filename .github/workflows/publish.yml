@@ -8,7 +8,7 @@ name: Publish Process
 # ↓ 自動生成 下載檔案 及 javadoc
 on:
   push:
-    branches: [ test-action ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
       - name: 'maven jar publish'
         uses: eric2788/maven-jar-publish@master
         with:
-         java-version: 16
+         java-version: 18
          pre-release: true
          body: test
          upload-module: './PluginModule'   
@@ -42,7 +42,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v2
         with:
-          java-version: '16'
+          java-version: '18'
           distribution: 'adopt'
       - name: Publish package
         run: mvn --batch-mode deploy
