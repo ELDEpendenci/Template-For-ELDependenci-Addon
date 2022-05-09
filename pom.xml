@@ -36,13 +36,13 @@
             <dependency>
                 <groupId>io.papermc.paper</groupId>
                 <artifactId>paper-api</artifactId>
-                <version>1.17.1-R0.1-SNAPSHOT</version>
+                <version>1.18.2-R0.1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.eldependenci</groupId>
                 <artifactId>eldependenci-framework</artifactId>
-                <version>0.1.5</version>
+                <version>0.1.6</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -120,8 +120,8 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
                     <configuration>
-                        <source>16</source>
-                        <target>16</target>
+                        <source>18</source>
+                        <target>18</target>
                         <encoding>UTF-8</encoding>
                     </configuration>
                 </plugin>
