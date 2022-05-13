@@ -15,8 +15,7 @@ jobs:
       - name: Checkout Source Code
         id: checkout-source
         uses: actions/checkout@v2
-      - name: 'maven jar publish'
-        uses: eric2788/maven-jar-publish@master
+      - uses: eric2788/maven-jar-publish@v2
         with:
          java-version: 18
          pre-release: true
@@ -38,9 +37,18 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-get-latest-tag@v1
+        id: latest-tag
+      - uses: jungwinter/split@v2
+        id: version
+        with:
+          msg: ${{ steps.latest-tag.outputs.tag }}
+         separator: '.'
       - uses: actions/setup-java@v2
+        if: steps.version.outputs.length == 3
         with:
           java-version: '18'
           distribution: 'adopt'
       - name: Publish package
+        if: steps.version.outputs.length == 3
         run: mvn --batch-mode deploy
