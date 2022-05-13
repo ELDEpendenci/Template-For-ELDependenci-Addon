@@ -43,7 +43,7 @@ jobs:
         id: version
         with:
           msg: ${{ steps.latest-tag.outputs.tag }}
-         separator: '.'
+          separator: '.'
       - uses: actions/setup-java@v2
         if: steps.version.outputs.length == 3
         with:
