@@ -1,7 +1,7 @@
 package how.to.use.in.external;
 
 
-import com.ericlam.mc.eld.ELDLifeCycle;
+import com.ericlam.mc.eld.bukkit.ELDLifeCycle;
 import org.bukkit.plugin.java.JavaPlugin;
 import tutorial.showcase.ExampleService;
 

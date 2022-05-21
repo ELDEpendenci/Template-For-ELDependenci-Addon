@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.eldependenci</groupId>
-    <artifactId>Template-For-ELDependenci-Addon</artifactId>
+    <artifactId>example-tutorial-addon</artifactId>
     <packaging>pom</packaging>
     <version>0.1.1</version>
     <modules>
-        <module>APIModule</module>
-        <module>PluginModule</module>
+        <module>example-tutorial-api</module>
+        <module>example-tutorial-plugin</module>
     </modules>
 
     <repositories>
@@ -41,14 +41,14 @@
             </dependency>
             <dependency>
                 <groupId>org.eldependenci</groupId>
-                <artifactId>eldependenci-framework</artifactId>
-                <version>0.1.6</version>
+                <artifactId>eldependenci-bukkit</artifactId>
+                <version>2.0.4-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.eldependenci</groupId>
                 <artifactId>eldependenci-addon</artifactId>
-                <version>0.1.5</version>
+                <version>2.0.4-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
         </dependencies>

@@ -20,7 +20,7 @@ jobs:
          java-version: 18
          pre-release: true
          body: test
-         upload-module: './PluginModule'   
+         upload-module: './example-tutorial-plugin'
       - name: 'Update javadocs'
         id: update-javadoc
         uses: eric2788/push-javadoc-branch@main
